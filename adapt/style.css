@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.card {
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.card_image {
+    height: 120px;
+    background-color: #a2a2a2;
+    margin: auto;
+}
+
+.card_description {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Медиазапросы */
+@media screen and (max-width: 658px) {
+    .card {
+        width: 50%;
+        max-width: 100%;
+        margin: auto auto 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 95%;
+    }
+}
